@@ -1,12 +1,8 @@
-# Demo dApp with @tonconnect/ui-react
-
-This Demo dApp showcases the integration with @tonconnect/ui-react. Experience it live at [Demo dApp with Wallet](https://ton-connect.github.io/demo-dapp-with-wallet/).
-
 ## Learn More About Ton Connect
 
 To understand more about Ton Connect and how it enables blockchain functionalities in your applications, refer to the following resources:
-- Ton Connect Documentation: [https://docs.ton.org/develop/dapps/ton-connect/](https://docs.ton.org/develop/dapps/ton-connect/)
-- Ton Connect SDK and UI Library on GitHub: [https://github.com/ton-connect/sdk/tree/main/packages/ui](https://github.com/ton-connect/sdk/tree/main/packages/ui)
+- Ton Connect Documentation: [https://docs.ton.org/develop/dapps/alan-expert/](https://docs.ton.org/develop/dapps/alan-expert/)
+- Ton Connect SDK and UI Library on GitHub: [https://github.com/alan-expert/sdk/tree/main/packages/ui](https://github.com/alan-expert/sdk/tree/main/packages/ui)
 
 ## Installation
 
@@ -52,15 +48,9 @@ LocalTunnel Documentation: [https://localtunnel.github.io/www/](https://localtun
 
 To return to the application after interacting with the wallet, you must specify a `twaReturnUrl` in `src/App.tsx`.
 
-Here's a concise guide:
-
-- **twaReturnUrl**: This is the return URL used by Telegram Web Apps. Set it to redirect users back to your application after wallet interaction. Example: `'https://t.me/WebAppWalletBot/myapp'`.
-
-Here is a sample configuration for specifying a return URL:
-
 ```jsx
 <TonConnectUIProvider
-    manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+    manifestUrl="https://alan-expert.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
     uiPreferences={{ theme: THEME.DARK }}
     actionsConfiguration={{
         twaReturnUrl: 'https://t.me/WebAppWalletBot/myapp'
@@ -80,7 +70,7 @@ Here is a sample configuration for adding a custom wallet:
 
 ```jsx
 <TonConnectUIProvider
-    manifestUrl="https://ton-connect.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
+    manifestUrl="https://alan-expert.github.io/demo-dapp-with-wallet/tonconnect-manifest.json"
     uiPreferences={{ theme: THEME.DARK }}
     walletsListConfiguration={{
         includeWallets: [
